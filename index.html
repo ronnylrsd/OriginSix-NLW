@@ -1,0 +1,257 @@
+<!--toda pagina tem um index-->
+<!DOCTYPE html>
+<!--html tag principal (raiz)-->
+<html lang="pt_BR">
+  <!--linguagem da página //pai-->
+  <head>
+    <!--info das pg-->
+    <meta charset="UTF-8" />
+    <!--Ajuste de navegadores-->
+    <!--meta a configuração da página-->
+    <!--viewport é o espaço para ver-->
+    <!--width é largura-->
+    <!--sem escala, mantendo ela em um-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--deixar o documento mais flexível-->
+    <!--1º Mobile e depois outros dispositivos-->
+    <title>OriginSix</title>
+
+    <!--ÍCONES-->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!--Swiper HTML-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- ESTILOS -->
+    <!-- link tbm tag que se fecha sozinho-->
+    <!-- rel = relação de stylesheet-->
+    <!-- href = referência style.css na pasta local-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTES-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    />
+
+  </head>
+  <!--filho-->
+  <body>
+    <!--O que vê nas páginas-->
+    <!--Título-->
+    <!--header,main,sections,footer deixam o HTML mais semântico-->
+    <!--organizar a página é um dos princípios do SIO (seu site vai la pra cima na busca do google)-->
+    <header id="header">
+      <!--elementos de clique (navegação)-->
+      <nav class="container">
+        <a class="logo" href="#">E D R <span>MARCENARIA</span>.</a>
+        <!--menu-->
+        <div class="menu">
+          <ul class="grid">
+            <!--lista não ordenada-->
+            <li><a class="title" href="#home">Início</a></li>
+            <!--itens da lists-->
+            <li><a class="title" href="#about">Sobre</a></li>
+            <!--o # vai ancorar na página-->
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!--/menu-->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Home-->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <!-- img = imagem não precisa fechar pois não tem conteúdo-->
+            <!-- src = onde ela vai buscar esse conteúdo na internet-->
+            <!-- alt = se ele nnão achar ele exibe essa mensagem-->
+            <img
+              src="https://images.unsplash.com/photo-1520554704788-a6a2e7854290?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt="Indivíduo parafusando partes de madeira"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Móveis sob medida para você</h2>
+            <p>
+              Uma empresa exclusiva em Jaboatão dos Guararapes, especializada em
+              móveis sob medida.
+            </p>
+            <a class="button" href="#">Agendar um horário</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!--Sobre-->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="https://images.unsplash.com/photo-1596496181961-4326beb30551?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Mulher cortando madeira">
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum delectus tempora culpa, qui rerum at earum nemo deleniti ea fugit accusamus excepturi inventore, doloribus nam velit. Quis molestiae quo reiciendis.
+            </p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa quod placeat ducimus atque exercitationem assumenda, tempora dolores unde ex vero! Aperiam ea omnis error laudantium accusamus dignissimos, quae saepe?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolor provident explicabo modi assumenda blanditiis, labore commodi culpa facere pariatur repellat quos voluptates debitis nemo eveniet, quaerat possimus enim veniam!</p>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+      
+      <!--Serviços-->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>Empresa de cara nova no mercado, a <strong>E D R MARCENARIA</strong> já conquistou clientes de todo estado com sua confiabilidade e resultados excepcionais. </p> 
+          </header>
+          <div class="card grid">
+            <i class="icon-saw"></i> <!-- o i geralmente é usado para ícones-->
+            <h3 class="title">Móveis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis voluptatum, sequi quae tempore hic adipisci. Alias, cum libero sed maiores voluptatum iusto, fuga eum magni minus rem odit dicta.</p>
+          </div>
+          <div class="card grid">
+            <i class="icon-scrull-driver"></i>
+            <h3 class="title">Restauração</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis voluptatum, sequi quae tempore hic adipisci. Alias, cum libero sed maiores voluptatum iusto, fuga eum magni minus rem odit dicta.</p>
+          </div>
+          <div class="card grid">
+            <i class="icon-saw2"></i>
+            <h3 class="title">Decoração</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis voluptatum, sequi quae tempore hic adipisci. Alias, cum libero sed maiores voluptatum iusto, fuga eum magni minus rem odit dicta.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!--Depoimentos-->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+
+            <div class="swiper-wrapper">
+         
+              <div class="testimonial swiper-slide">
+                <blockquote><!--bloco para citar pessoal-->
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi, earum perspiciatis nemo ipsa eius natus!
+                  </p>
+                  <cite><!--Citações de pessoas-->
+                    <img src="assets/fotos/15.jpg" alt="Foto da Wanessa Souza">
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote><!--bloco para citar pessoal-->
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi, earum perspiciatis nemo ipsa eius natus!
+                  </p>
+                  <cite><!--Citações de pessoas-->
+                    <img src="assets/fotos/44.jpg" alt="Foto da Franciele Venega">
+                    Franciele Venega
+                  </cite>
+                </blockquote>
+              </div>
+              
+              <div class="testimonial swiper-slide">
+                <blockquote><!--bloco para citar pessoal-->
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi, earum perspiciatis nemo ipsa eius natus!
+                  </p>
+                  <cite><!--Citações de pessoas em Itallico-->
+                    <img src="assets/fotos/77.jpg" alt="Foto da Valeska Frabis">
+                    Valeska Frabis
+                  </cite>
+                </blockquote>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!--Contatos-->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>Entre em contato com a E D R MARCENARIA, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+            <a href="https://api.whatsapp.com/send?phone=+5581988188497&text=Oi! Gostaria de agendar um horário"
+            class="button"
+            target="_blank"
+            ><i class="icon-whatsapp"></i> Entrar em contato</a>
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i>81 988188497</li>
+              <li><i class="icon-map-pin"></i>Alto São Benedito, 7</li>
+              <li><i class="icon-mail"></i>edrmarcenaria@gmail.com</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+    </main>
+
+    <footer class="section"><!--roda-pé da página-->
+      <div class="container grid"><!--divisão-->
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">E D R <span>MARCENARIA</span>.</a>
+
+          <p>©2021 E D R MARCENARIA.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social">
+          <a href="https://instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+
+          <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+
+          <a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!--Swiper Js-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--scrollreveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--main.Js-->
+    <script src="main.js"></script>
+  </body>
+</html>
